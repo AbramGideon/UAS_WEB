@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="jstyle.css">
+</head>
+<body>
+    <div class="admin-login-form">
+        <form id="admin-login-form">
+          <h2>Admin Login</h2>
+          <label>
+            Email:
+            <input type="email" id="admin-email" required>
+          </label>
+          <br>
+          <label>
+            Password:
+            <input type="password" id="admin-password" required>
+          </label>
+          <br>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      <div class="product-list">
+        <h2>Product List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="product-table-body"></tbody>
+        </table>
+        <button id="new-product-btn">New Product</button>
+      </div>
+
+      <div class="product-list">
+        <h2>Product List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="product-table-body"></tbody>
+        </table>
+        <button id="new-product-btn">New Product</button>
+      </div>
+      <div class="product-form" id="product-form" style="display: none;">
+  <h2>Product Form</h2>
+  <form>
+    <label>
+      Name:
+      <input type="text" id="product-name" required>
+    </label>
+    <br>
+    <label>
+      Price:
+      <input type="number" id="product-price" required>
+    </label>
+    <br>
+    <button type="submit" id="product-form-submit-btn">Save</button>
+    <button type="button" id="product-form-cancel-btn">Cancel</button>
+  </form>
+</div>
+
+</body>
+<script src="main.js"></script>
+</html>
